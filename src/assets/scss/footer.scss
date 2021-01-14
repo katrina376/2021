@@ -1,0 +1,132 @@
+// varible declare
+$fontColor: white;
+$backgroundColor:#1F4163;
+$fontFamily: Noto Sans CJK TC,monospace;
+
+$max-width-0: 1225px;
+$max-width-1: 1175px;
+$max-width-2: 1030px;
+$max-width-3: 600px;
+$max-width-4: 415px;
+
+@mixin fontSize() {
+    font-size: 24px;
+    line-height: 45px;
+    @media only screen and (max-width: $max-width-0) {
+
+    }
+    @media only screen and (max-width: $max-width-1) {
+        font-size: 20px;
+    }
+    @media only screen and (max-width: $max-width-2) {
+        line-height: 35px;
+    }
+    @media only screen and (max-width: $max-width-3) {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+@mixin iconSize() {
+    font-size: 2.8em;
+    margin: 0 25px;
+    @media only screen and (max-width: $max-width-0) {
+        font-size: 2em;
+        
+    }
+    @media only screen and (max-width: $max-width-1) {
+        font-size: 2em;
+        margin: 0 20px;
+    }
+    @media only screen and (max-width: $max-width-2) {
+
+    }
+    @media only screen and (max-width: $max-width-3) {
+        font-size: 1.8em;
+    }
+}
+@mixin footerLayout() {
+    // flex
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    & > * {
+        margin-left: 100px;
+    }
+    @media only screen and (max-width: $max-width-0) {
+        
+    }
+    @media only screen and (max-width: $max-width-1) {
+       
+    }
+    @media only screen and (max-width: $max-width-2) {
+        flex-direction: column;
+        justify-content: center;
+        height: 320px;
+    }
+    @media only screen and (max-width: $max-width-3) {
+        align-items: center;
+        & > * {
+            margin-left: 0;
+            width: 80%;
+        }
+    }
+    @media only screen and (max-width: $max-width-4) {
+        align-items: center;
+        & > * {
+            margin-left: 0;
+            width: 90%;
+        }
+    }
+}
+
+.footer-container {
+    background: $backgroundColor;
+    // position
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // size
+    width: 100vw;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // layout
+    @include footerLayout;
+    .footer-left {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        //margin-left: 100px;
+    }
+    .footer-right {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        //margin-left: 100px;
+    }
+}
+
+.footer-community-icon {
+    .community-icon {
+        @include iconSize;
+        color: $fontColor;
+    }
+    .community-icon:first {
+        margin-left: 0;
+    }
+}
+
+.footer-context {
+    @include fontSize;
+    font-family: $fontFamily;
+    color: $fontColor;
+    font-weight: bold;
+}
+
+.footer-font-block {
+    // display flex
+    display: flex;
+    flex-direction: column;
+    // size
+    width: auto;
+}
