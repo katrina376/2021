@@ -1,7 +1,8 @@
 <template>
-  <div class="cfp">
-    <h1>info</h1>
-    <Footer></Footer>
+  <div class="info">
+    
+    <Agenda/>
+
   </div>
 </template>
 
@@ -9,7 +10,13 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 
-@Component({})
+import Agenda from '../components/CFP/Agenda.vue';
+
+@Component({
+  components: {
+    Agenda
+  }
+})
 export default class Info extends Vue {
   @Prop() private msg!: string;
 }
