@@ -1,6 +1,13 @@
 // goable
+@import './reset.scss';
 @import './variable.scss';
+@import './color.scss';
+@import './util.scss';
 @import './footer.scss';
 
-// CFP Page
-@import './CFP/CFP.scss';
+.sitcon-burnfont {
+  color: $mid-blue;
+  font-weight: 900;
+}
+
+

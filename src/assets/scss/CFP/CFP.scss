@@ -1,0 +1,50 @@
+@import '../breakpoint.scss';
+
+#cfp-header {
+  padding-top: 126px;
+  padding-bottom: 20px;
+
+  .spot-box {
+    padding-bottom: 260px;
+
+    .sitcon-name {
+      margin-top: 32px;
+    }
+    .sitcon-topic {
+      margin-top: 32px;
+    }
+  }
+
+  .info-box {
+    .date-location-wrapper {
+      .date {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+
+@include mobile {
+}
+
+@include desktop {
+  #cfp-header {
+    .info-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .date-location-wrapper {
+        order: 1;
+      }
+      .cfp {
+        margin-top: 200px;
+        order: 2;
+      }
+      .info-wrapper {
+        margin-top: 120px;
+        order: 3;
+      }
+    }
+  }
+}
