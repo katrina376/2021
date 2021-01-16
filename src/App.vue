@@ -8,7 +8,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 // components
-import Footer from '@/components/Footer.vue';
+import Footer from '@/components/footer.vue';
 
 @Component({
   components: {
