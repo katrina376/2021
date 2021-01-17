@@ -102,13 +102,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 // components
-import Footer from "@/components/footer.vue";
+import Footer from '@/components/Footer.vue';
 
 @Component({
-  components: { Footer },
+  components: { Footer }
 })
 export default class CFP extends Vue {
   @Prop() private msg!: string;
