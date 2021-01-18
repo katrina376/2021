@@ -3,10 +3,10 @@
         <div class="introduction">
             <!-- first part -->
             <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
-            <svg width="890" height="900" class="first-box" style="margin-top: -300px">
+            <svg width="890" height="900" class="first-box">
               <rect width="1000" height="1000" style="fill:#ffffff;" />
             </svg>
-            <div class="first-div">
+            <div class="box-back">
                 <h1>關於 SITCON</h1>
                 <div class="about-section">
                     <p class="context">
@@ -57,49 +57,59 @@
             </div>
             <!-- first part -->
             <!-- second part -->
-            <div class="topic-intro">
-                <h1>2021 年會主題</h1>
-                <h1>
-                    <span class="enlarge">算盤的後裔</span>
-                </h1>
-                <p class="context">
-                    千年以前的人類，發明了各式各樣輔助算術的工具，在世界各地的文明中，皆能找到廣義上的「算盤」。隨著時代演進，那些原始的工具，逐步進化成為現代的計算機與電腦，更進一步發展為隨處可見的智慧型裝置。俗話說「站在巨人的肩膀上」，前人的智慧成果成為墊腳石，讓站在其之上的後人可以看得更高、更遠。科技層層疊疊、承先啟後，文明才能跨越時空持續成長。
-                </p>
-                <p class="context">
-                    人們不再需要重新發明輪子，只要善用前人的成果，就能造出更有效率的工具，並擁有更好的生活。生於現代的我們，每天寫著電腦程式、把玩著智慧型手機、徜徉在網際網路上沒有邊際的資訊大海。奠基於科技的現有成果，對科技的未來持續做出貢獻的我們，都是「算盤的後裔」。
-                </p>
-
-                <h2 style="margin-top:40px;">徵稿時間</h2>
-                <div>
-                    <h2 class="date">01/15 ~ 02/22</h2>
-                    <p class="detail">
-                        詳細時程請見
+            <img src="@/assets/images/cfp/Path 762.svg" class="des-text-path"/>
+            <svg width="1500" height="1500" class="second-box">
+              <rect width="1500" height="1500" style="fill:#ffffff;" />
+            </svg>
+            <svg width="2000" height="350" class="des-blue-bar">
+              <rect width="1500" height="350" style="fill:#226BB4;" />
+            </svg>
+            <div class="box-back" style="margin-top: 1000px;">
+                <div class="topic-intro">
+                    <h1>2021 年會主題</h1>
+                    <h1>
+                        <span class="enlarge">算盤的後裔</span>
+                    </h1>
+                    <p class="context">
+                        千年以前的人類，發明了各式各樣輔助算術的工具，在世界各地的文明中，皆能找到廣義上的「算盤」。隨著時代演進，那些原始的工具，逐步進化成為現代的計算機與電腦，更進一步發展為隨處可見的智慧型裝置。俗話說「站在巨人的肩膀上」，前人的智慧成果成為墊腳石，讓站在其之上的後人可以看得更高、更遠。科技層層疊疊、承先啟後，文明才能跨越時空持續成長。
                     </p>
-                    <div class="button-post">
-                        <button class="buttons">投稿資訊</button>
-                        <button class="buttons">不用說了，快讓我投稿！</button>
+                    <p class="context">
+                        人們不再需要重新發明輪子，只要善用前人的成果，就能造出更有效率的工具，並擁有更好的生活。生於現代的我們，每天寫著電腦程式、把玩著智慧型手機、徜徉在網際網路上沒有邊際的資訊大海。奠基於科技的現有成果，對科技的未來持續做出貢獻的我們，都是「算盤的後裔」。
+                    </p>
+                    <img src="@/assets/images/cfp/paper/paper.png" class="paper-image" />
+                    <h2>徵稿時間</h2>
+                    <div>
+                        <h2 class="date">01/15 ~ 02/22</h2>
+                        <p class="detail">
+                            詳細時程請見
+                        </p>
+                        <div class="button-post">
+                            <button class="buttons"><h3>投稿資訊</h3></button>
+                            <!-- NOTE: this button's hover won't work because paper.png is too big -->
+                            <button class="buttons"><h3>不用說了，快讓我投稿！</h3></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="last-part">
-                <h3>最後...</h3>
-                <h1>SITCON 贊助徵求</h1>
-                <!--style="margin-top:-30px;"-->
-                <p class="context">
-                    SITCON 的舉辦，除了有賴眾多志工的努力，也需要金錢的支持。<br />
-                    如果您認同 SITCON 的理念，歡迎以行動支持 SITCON
-                    的運作，讓更多交流產生！
-                </p>
-                <p class="context">
-                    企業合作歡迎聯繫
-                    <a class="content-hyperlink" href="mailto:contact@sitcon.org">contact@sitcon.org</a>
-                </p>
-                <div>
-                    <button class="buttons">個人贊助方案</button>
+                <div class="last-part">
+                    <h3>最後...</h3>
+                    <h1>SITCON 贊助徵求</h1>
+                    <!--style="margin-top:-30px;"-->
+                    <p class="context">
+                        SITCON 的舉辦，除了有賴眾多志工的努力，也需要金錢的支持。<br />
+                        如果您認同 SITCON 的理念，歡迎以行動支持 SITCON
+                        的運作，讓更多交流產生！
+                    </p>
+                    <p class="context">
+                        企業合作歡迎聯繫
+                        <a class="content-hyperlink" href="mailto:contact@sitcon.org">contact@sitcon.org</a>
+                    </p>
+                    <div>
+                        <button class="buttons"><h3>個人贊助方案</h3></button>
+                    </div>
                 </div>
+                <!-- second part -->
             </div>
-            <!-- second part -->
         </div>
     </main>
 </template>
