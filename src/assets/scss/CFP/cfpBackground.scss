@@ -1,0 +1,16 @@
+.cfp-background {
+    // image
+    background-image:
+        url('../assets/image/CFPBackground.svg'),
+        url('../assets/image/sitcon-icon.svg');
+    background-position: 
+        60% center,
+        center 12%;
+    background-repeat: no-repeat,no-repeat;
+    
+
+    height: 2900px;
+    width: 100vw;
+
+    z-index: -1;
+}
