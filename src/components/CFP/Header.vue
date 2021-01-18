@@ -54,14 +54,14 @@
           </div>
         </div>
       </div>
-      <div class="cfp-info">
-        <div class="cfp-info-wrapper">
+      <div class="cfp-news">
+        <div class="cfp-news-wrapper">
           <div class="hexagon">
             <a href="#" rel="noopener" class="btn">
               <img
-                src="~@/assets/image/burnfont/info.svg"
+                src="~@/assets/image/burnfont/news.svg"
                 class="svg"
-                id="svg-info"
+                id="svg-news"
               />
             </a>
           </div>
