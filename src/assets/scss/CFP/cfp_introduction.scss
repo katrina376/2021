@@ -366,15 +366,19 @@ p.small-tag {
 }
 
 .ellipse {
-  margin-top: -700px;
-  margin-bottom: 130px;
-  margin-left: -15%;
-  transform: scale(0.6); 
+  position: absolute;
+  width: 100%;
+  margin-top: -75%;
+  margin-left: -14%;
+  align-content: center;
+  transform: scale(0.3); 
 }
 
 .sitcon-icon {
-  margin-top: -670px;
-  margin-bottom: 100px;
-  margin-left: -15%;
-  transform: scale(0.6); 
+  position: absolute;
+  width: 100%;
+  margin-top: -98%;
+  margin-left: -14%;
+  align-content: center;
+  transform: scale(0.15); 
 }
