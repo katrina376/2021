@@ -3,7 +3,7 @@
         <a class="image container" :href="ytLink" target="_blank" rel="noopener">
             <img :src="img">
         </a>
-        <a class="description" :href="introdLink" target="_blank" rel="noopener">{{ title }}</a>
+        <p class="description">{{ title }} <span v-if="introdLink != ''">(<a :href="introdLink" target="_blank" rel="noopener">簡介</a>)</span></p>
     </div>
 </template>
 
