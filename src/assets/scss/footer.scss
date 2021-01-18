@@ -1,41 +1,41 @@
+@import './breakpoint.scss';
+
 // varible declare
 $fontColor: white;
 $backgroundColor: #1f4163;
 $fontFamily: Noto Sans CJK TC, monospace;
 
-$max-width-0: 1225px;
-$max-width-1: 1175px;
-$max-width-2: 1030px;
-$max-width-3: 646px;
-$max-width-4: 415px;
-
 @mixin fontSize() {
   font-size: 14pt;
   line-height: 2;
-  @media only screen and (max-width: $max-width-0) {
+  @include xl {
   }
-  @media only screen and (max-width: $max-width-1) {
+  @include lg {
   }
-  @media only screen and (max-width: $max-width-2) {
+  @include md {
   }
-  @media only screen and (max-width: $max-width-3) {
+  @include sm {
     font-size: 14pt;
+  }
+  @include xs {
   }
 }
 
 @mixin iconSize() {
   font-size: 2.4em;
   margin-right: 36px;
-  @media only screen and (max-width: $max-width-0) {
+  @include xl {
     font-size: 2.1em;
     margin-right: 20px;
   }
-  @media only screen and (max-width: $max-width-1) {
+  @include lg {
   }
-  @media only screen and (max-width: $max-width-2) {
+  @include md {
     font-size: 1.8em;
   }
-  @media only screen and (max-width: $max-width-3) {
+  @include sm {
+  }
+  @include xs {
   }
 }
 
@@ -48,7 +48,7 @@ $max-width-4: 415px;
     margin-left: 100px;
   }
 
-  @media only screen and (max-width: $max-width-2) {
+  @include md {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -70,7 +70,7 @@ $max-width-4: 415px;
     }
   }
 
-  @media only screen and (max-width: $max-width-4) {
+  @include xs {
     & > * {
       width: 90%;
     }
@@ -80,14 +80,15 @@ $max-width-4: 415px;
 .footer-container {
   background: $backgroundColor;
   // position
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  margin-top: auto;
+
   // size
   width: 100vw;
-  // min-height: 200px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 
   .footer-left {
     display: inline-flex;

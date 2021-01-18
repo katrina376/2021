@@ -2,7 +2,7 @@
 
 #cfp-header {
   padding-top: 126px;
-  padding-bottom: 20px;
+  padding-bottom: 126px;
 
   .spot-box {
     padding-bottom: 260px;
@@ -24,10 +24,7 @@
   }
 }
 
-@include mobile {
-}
-
-@include desktop {
+@include xxl {
   #cfp-header {
     .info-box {
       display: flex;
@@ -47,4 +44,9 @@
       }
     }
   }
+}
+
+
+@include xs {
+  // TODO
 }
