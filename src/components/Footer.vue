@@ -3,7 +3,9 @@
     <div class="footer-left">
       <p class="footer-brand footer-font-block">
         <span class="footer-context">學生計算機年會</span>
-        <span class="footer-context">Students' Information Technology Conference</span>
+        <span class="footer-context"
+          >Students' Information Technology Conference</span
+        >
       </p>
       <p class="footer-contact footer-font-block">
         <span class="footer-context">聯絡我們</span>
@@ -11,20 +13,25 @@
       </p>
     </div>
     <div class="footer-right">
-      <p class="footer-community">
-        <span class="footer-context">社群媒體</span>
-        <div class="footer-community-icon">
+      <div class="footer-community">
+        <p class="footer-context">社群媒體</p>
+        <p class="footer-community-icon-container">
+          <span class="footer-community-icon">
             <a
               target="_blank"
               rel="noopener"
               v-for="community in communityLink"
               :href="community.link"
-              :key="community.link"
+              :key="community.title"
             >
-              <FontawesomeIcon class="community-icon" :icon="['fab',community.icon]"/>
+              <FontawesomeIcon
+                class="community-icon"
+                :icon="['fab', community.icon]"
+              />
             </a>
-        </div>
-      </p>
+          </span>
+        </p>
+      </div>
     </div>
   </footer>
 </template>
