@@ -41,6 +41,12 @@ $buttonHoverBg: #226BB4;
     margin: -8px;
   }
 
+  // .cfp-background{
+  //   background-image: url('/assets/images/cfp/Background.svg') no-repeat;
+  //   background-size: cover;
+  //   z-index: 1;
+  // }
+
   .introduction {
     // flex
     display: flex;
@@ -51,6 +57,7 @@ $buttonHoverBg: #226BB4;
     color: $fontColor;
     // size
     margin-left: 15%;
+    margin-top: 50%;
   }
 
   .about-section {
@@ -333,3 +340,24 @@ p.small-tag {
   margin-bottom: -710px;
   z-index: 1;
 }
+
+.background {
+  position: absolute;
+  top: 0;
+  width:140%;
+  margin-left: -35%;
+  margin-top: -15%;
+  text-align: center;
+  z-index: -1;
+}
+
+// .home_background {
+//   background: url('../../assets/images/cfp/Background.svg');
+//   position: relative;
+//   top: 0;
+//   width:140%;
+//   margin-left: -30%;
+//   text-align: center;
+//   z-index: 0;
+// }
+

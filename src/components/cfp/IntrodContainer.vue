@@ -1,6 +1,11 @@
 <template>
     <main class="introduction-container">
+
         <div class="introduction">
+            <!-- <div class="home_background">
+                hello
+            </div> -->
+            <img src="@/assets/images/cfp/Background.svg" class="background"/>
             <!-- first part -->
             <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
             <svg width="890" height="900" class="first-box">
@@ -55,6 +60,7 @@
                     <button class="buttons"><h3>會議記錄</h3></button>
                 </div>
             </div>
+            
             <!-- first part -->
             <!-- second part -->
             <img src="@/assets/images/cfp/Path 762.svg" class="des-text-path"/>
@@ -90,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="last-part">
                     <h3>最後...</h3>
                     <h1>SITCON 贊助徵求</h1>
@@ -110,12 +116,14 @@
                 </div>
                 <!-- second part -->
             </div>
+            
         </div>
     </main>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+
 
 @Component
 export default class IntrodContainer extends Vue {}

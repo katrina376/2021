@@ -1,5 +1,6 @@
 <template>
   <div id="cfp">
+    <!-- <Background></Background> -->
     <IntrodContainer></IntrodContainer>
   </div>
 </template>
@@ -9,9 +10,10 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 // components
 import IntrodContainer from '@/components/cfp/IntrodContainer.vue';
+//import Background from '@/components/cfp/background.vue';
 
 @Component({
-  components: { IntrodContainer }
+  components: { IntrodContainer } //Background
 })
 export default class CFP extends Vue {
   @Prop() private msg!: string;
