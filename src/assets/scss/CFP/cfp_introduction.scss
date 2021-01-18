@@ -53,6 +53,10 @@ $buttonHoverBg: #226BB4;
     // size
     margin-left: 15%;
     margin-top: 50%;
+
+    @media screen and(max-width: 414px) {
+      width:100%;
+    }
   }
 
   .about-section {
@@ -60,7 +64,11 @@ $buttonHoverBg: #226BB4;
     font-size: $contextFontSize;
     letter-spacing: $contextLetterSpace;
     line-height: 42px;
+    width:90%;
 
+    @media screen and(max-width: 414px) {
+      width:150%;
+    }
   }
 
   .discuss-section {
@@ -157,6 +165,8 @@ h1 {
   .sub {
     font-size: $subFontSize;
   }
+
+
 }
 
 h2 {
@@ -289,6 +299,17 @@ p.small-tag {
   margin-left: -200px;
   margin-top: -300px;
   z-index: 1;
+
+  @media screen and(max-width: 960px){
+    margin-bottom: -800px;
+    margin-left: -400px;
+    transform: rotate(13deg);
+  }
+
+  @media screen and(max-width: 414px){
+    transform:scale(0.6);
+    transform: rotate(12deg);
+  }
 }
 
 .second-box {
@@ -343,16 +364,6 @@ p.small-tag {
   margin-bottom: -710px;
   z-index: 1;
 }
-
-// .cfp-background {
-//   background-image: url(../../assets/images/cfp/Background.svg);
-//   position: absolute;
-//   width: 200%;
-//   max-height: 2000px;
-//   margin-left: -100%;
-//   margin-top: -30%;
-//   z-index: 1;
-// }
 
 .background {
   position: absolute;

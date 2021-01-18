@@ -6,7 +6,6 @@
             <img src="@/assets/images/cfp/Ellipse 5.svg" class="ellipse"/>
             <img src="@/assets/images/cfp/Group 10.svg" class="sitcon-icon"/>
             <img src="@/assets/images/cfp/Background.svg" class="background"/>
-            
             <!-- first part -->
             <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
             <svg width="890" height="900" class="first-box">
