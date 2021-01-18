@@ -1,14 +1,9 @@
-@import './breakpoint.scss';
+@import './hyperpoint.scss';
 @import './color.scss';
 
-@mixin shadow {
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
-}
-
+// desktop mode
 #news-header {
-  padding: 72px 160px;
+  padding: 72px 280px;
 
   .top-bar {
     position: relative;
@@ -56,7 +51,7 @@
   }
 
   .cfp-body {
-    padding: 40px 96px;
+    padding: 40px 48px;
     margin-top: 54px;
     border-radius: 24px;
 
@@ -71,12 +66,16 @@
     align-items: center;
 
     .spot-wrapper {
+      margin-bottom: 2.25em;
+
       h1 {
         font-size: 26pt;
         margin-bottom: 1em;
       }
 
-      margin-bottom: 2.25em;
+      .countdown {
+        line-height: 1.5;
+      }
     }
 
     .time-wrapper {
@@ -99,29 +98,208 @@
   }
 }
 
-@include xl {
-  #news-header {
-    padding: 72px 126px;
-  }
-}
-
 @include lg {
   #news-header {
-    padding: 72px 72px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
 // mobile mode
 @include md {
-  .top-bar {
-    background: $white;
-    height: 80px;
-    border-radius: 40px;
-    @include shadow;
-  }
+  #news-header {
+    font-size: 14pt;
+    padding: 72px 100px;
 
-  .cfp-body {
-    .time-wrapper {
+    .top-bar {
+      position: initial;
+      height: 5em;
+      border-radius: 2.5em;
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+
+      background: $white;
+      -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .return-wrapper {
+        // location
+        position: initial;
+        flex: 1;
+
+        .shape-wrapper {
+          background: $white;
+          border-radius: 12px;
+          -webkit-box-shadow: -13px 13px 0px -6px $mid-blue,
+            0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: -13px 13px 0px -6px $mid-blue,
+            0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: -13px 13px 0px -6px $mid-blue,
+            0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+          .text-wrapper {
+            width: 3em;
+            height: 3em;
+            line-height: 3em;
+            text-align: center;
+            color: $mid-blue;
+            font-weight: bold;
+            font-size: 1em;
+          }
+        }
+      }
+
+      .title-wrapper {
+        flex: 1;
+        .svg-cfp-news {
+          height: 2.25em;
+          width: auto;
+        }
+      }
+
+      .contribute-wrapper {
+        display: initial;
+        flex: 1;
+        text-align: end;
+
+        .btn-contribute {
+          display: inline-block;
+          border-radius: 6px;
+          background: $mid-blue;
+          color: $white;
+          font-weight: 900;
+          padding: 0.5em;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    .cfp-body {
+      padding-top: 2em;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 3.5em;
+      margin-top: 54px;
+      border-radius: 24px;
+
+      color: $white;
+      background: $mid-blue;
+      font-weight: bold;
+      font-size: 1em;
+
+      .spot-wrapper {
+        h1 {
+          font-size: 2em;
+          margin-bottom: 1em;
+        }
+
+        margin-bottom: 2.25em;
+      }
+
+      .time-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          height: initial;
+        }
+        p {
+          font-size: 1.25em;
+        }
+
+        .start-time-wrapper {
+          h2,
+          p {
+            margin-bottom: 1.25em;
+          }
+        }
+
+        .end-time-wrapper {
+          h2 {
+            margin-bottom: 1.25em;
+          }
+        }
+
+        .tilde-wrapper {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  #news-header {
+    font-size: 12pt;
+    padding: 60px 40px;
+
+    .cfp-body {
+      font-size: 14pt;
+    }
+  }
+}
+
+// a 540px break point will be better = =
+@media screen and (max-width: 539px) {
+  #news-header {
+    font-size: 10pt;
+    padding: 36px 18px;
+
+    .top-bar {
+      height: 4em;
+      border-radius: 2em;
+      padding-left: 1.66em;
+      padding-right: 1em;
+      -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+
+      .return-wrapper {
+        .shape-wrapper {
+          .text-wrapper {
+            width: 2.4em;
+            height: 2.4em;
+            line-height: 2.4em;
+            text-align: center;
+            color: $mid-blue;
+            font-weight: bold;
+            font-size: 1em;
+          }
+        }
+      }
+
+      .title-wrapper {
+        flex: 1;
+        .svg-cfp-news {
+          height: 1.85em;
+          width: auto;
+        }
+      }
+
+      .contribute-wrapper {
+        display: initial;
+        flex: 1;
+        text-align: end;
+
+        .btn-contribute {
+          display: inline-block;
+          border-radius: 6px;
+          background: $mid-blue;
+          color: $white;
+          font-weight: 900;
+          padding: 0.5em;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    .cfp-body {
+      font-size: 12pt;
     }
   }
 }
