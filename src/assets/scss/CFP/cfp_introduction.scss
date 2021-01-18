@@ -382,7 +382,7 @@ p.small-tag {
   margin-top: -75%;
   margin-left: -14%;
   align-content: center;
-  transform: scale(0.3); 
+  transform: scale(0.31); 
 }
 
 .sitcon-icon {
@@ -391,5 +391,56 @@ p.small-tag {
   margin-top: -98%;
   margin-left: -14%;
   align-content: center;
-  transform: scale(0.15); 
+  transform: scale(0.14); 
+}
+
+.sitcon-pic-2021 {
+  position: absolute;
+  width: 100%;
+  margin-top: -49%;
+  margin-left: -14%;
+  align-content: center;
+  transform: scale(0.18);
+}
+
+.sitcon-title-zh {
+  position: absolute;
+  width: 100%;
+  margin-top: -46%;
+  margin-left: -14%;
+  align-content: center;
+  transform: scale(0.11);
+}
+
+.sitcon-topic {
+  position: absolute;
+  width: 100%;
+  margin-top: -45%;
+  margin-left: -14%;
+  align-content: center;
+  transform: scale(0.23);
+}
+
+.sitcon-date {
+  position: absolute;
+  width: 100%;
+  margin-top: -31%;
+  margin-left: -44%;
+  transform: scale(0.13);
+}
+
+.sitcon-place {
+  position: absolute;
+  width: 100%;
+  margin-top: -36.5%;
+  margin-left: -44%;
+  transform: scale(0.13);
+}
+
+.sitcon-qeury {
+  position: absolute;
+  width: 100%;
+  margin-top: -18.5%;
+  margin-left: -14%;
+  transform: scale(0.2);
 }
