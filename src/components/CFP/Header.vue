@@ -1,7 +1,7 @@
 <template>
   <header class="sitcon-burnfont">
     <div class="spot-box">
-      <div class="sitcon-2021 text-center">
+      <div class="sitcon-2021 text-center spot-box-row">
         <img
           alt="SITCON2021"
           src="~@/assets/image/burnfont/2021.svg"
@@ -9,7 +9,7 @@
           id="svg-sitcon2021"
         />
       </div>
-      <div class="sitcon-name text-center">
+      <div class="sitcon-name text-center spot-box-row">
         <img
           alt="學生計算機年會"
           src="~@/assets/image/burnfont/sitcon.svg"
@@ -17,7 +17,7 @@
           id="svg-sitcon"
         />
       </div>
-      <h1 class="sitcon-topic text-center">
+      <h1 class="sitcon-topic text-center spot-box-row">
         <img
           alt="算盤的後裔"
           src="~@/assets/image/burnfont/topic.svg"
@@ -28,7 +28,7 @@
     </div>
     <div class="info-box">
       <div class="cfp-title">
-        <div class="cfp-svg-wrapper">
+        <div class="cfp-svg-wrapper text-center">
           <img
             src="~@/assets/image/burnfont/cfp.svg"
             class="svg"
