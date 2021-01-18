@@ -33,10 +33,3 @@ $max-width-4: 415px;
     @content;
   }
 }
-
-@mixin xxl {
-  @media (min-width: $max-width-0 + 1px) {
-    @content;
-  }
-}
-

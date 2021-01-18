@@ -1,11 +1,28 @@
 @import '../breakpoint.scss';
 
+$width-svg-sitcon2021: 341px;
+$width-svg-sitcon: 244px;
+$width-svg-topic: 515px;
+$width-svg-cfp: 368px;
+$width-svg-date: 207px;
+$width-svg-location: 227px;
+$width-svg-info: 188px;
+
 #cfp-header {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 126px;
   padding-bottom: 126px;
 
+  img.svg {
+    height: auto;
+  }
+
   .spot-box {
     padding-bottom: 260px;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
 
     .sitcon-name {
       margin-top: 32px;
@@ -16,37 +33,103 @@
   }
 
   .info-box {
-    .date-location-wrapper {
-      .date {
+    .date-location {
+      .date-wrapper {
         margin-bottom: 48px;
       }
     }
   }
+
+  .info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .date-location {
+      order: 1;
+    }
+    .cfp-title {
+      margin-top: 200px;
+      order: 2;
+    }
+    .cfp-info {
+      margin-top: 120px;
+      order: 3;
+    }
+  }
 }
 
-@include xxl {
+// Layout for mobile
+@include lg {
   #cfp-header {
+
     .info-box {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      align-items: flex-end;
+      flex-wrap: wrap;
 
-      .date-location-wrapper {
+      & > * {
+        margin: 0;
+      }
+
+      .cfp-title {
         order: 1;
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 80px;
       }
-      .cfp {
-        margin-top: 200px;
+
+      .date-location {
         order: 2;
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
-      .info-wrapper {
-        margin-top: 120px;
+
+      .cfp-info {
         order: 3;
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
     }
   }
 }
 
+@include md {
+  $scale: 0.9;
+  #svg-sitcon2021 { width: $width-svg-sitcon2021 * $scale; }
+  #svg-sitcon { width: $width-svg-sitcon * $scale; }
+  #svg-topic { width: $width-svg-topic * $scale; }
+  #svg-date { width: $width-svg-date * $scale; }
+  #svg-location { width: $width-svg-location * $scale; }
+  #svg-info { width: $width-svg-info * $scale; }
+  #svg-cfp { width: $width-svg-cfp * $scale; }
+}
+
+@include sm {
+  $scale: 0.7;
+  #svg-sitcon2021 { width: $width-svg-sitcon2021 * $scale; }
+  #svg-sitcon { width: $width-svg-sitcon * $scale; }
+  #svg-topic { width: $width-svg-topic * $scale; }
+  #svg-date { width: $width-svg-date * $scale; }
+  #svg-location { width: $width-svg-location * $scale; }
+  #svg-info { width: $width-svg-info * $scale; }
+  #svg-cfp { width: $width-svg-cfp * $scale; }
+}
 
 @include xs {
-  // TODO
+  $scale: 0.45;
+  #svg-sitcon2021 { width: $width-svg-sitcon2021 * $scale; }
+  #svg-sitcon { width: $width-svg-sitcon * $scale; }
+  #svg-topic { width: $width-svg-topic * $scale; }
+  #svg-date { width: $width-svg-date * $scale; }
+  #svg-location { width: $width-svg-location * $scale; }
+  #svg-info { width: $width-svg-info * $scale; }
+  #svg-cfp { width: $width-svg-cfp * $scale; }
 }
