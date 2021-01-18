@@ -62,7 +62,7 @@
               <rect width="1500" height="1500" style="fill:#ffffff;" />
             </svg>
             <svg width="2000" height="350" class="des-blue-bar">
-              <rect width="1500" height="350" style="fill:#226BB4;" />
+              <rect width="2000" height="350" style="fill:#226BB4;" />
             </svg>
             <div class="box-back" style="margin-top: 1000px;">
                 <div class="topic-intro">
