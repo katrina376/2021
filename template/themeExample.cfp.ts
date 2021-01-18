@@ -1,6 +1,6 @@
 export default [
     {
-        title: 'Fact Checking: 資訊的虛與實',
+        title: 'Fact Checking：資訊的虛與實',
         context: '近年來隨著社交媒體的普及，假消息、錯誤消息、不實消息也變得更容易流竄在其中，因此如何辨識消息、使正確消息傳播、消息類型的分辨，都是可以進行的方向。'
     },
     {
