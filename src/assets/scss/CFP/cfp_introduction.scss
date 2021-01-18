@@ -266,6 +266,14 @@ p.small-tag {
   width: 175px;
   height: 118px;
   box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+  
+  @media screen and (max-width:414px){
+    border-radius: 2px;
+    margin-bottom: 12px;
+    width: 107px;
+    height: 75px;
+    box-shadow: 0px 1px 6px rgba(89, 120, 206, 0.56);
+  }
 }
 
 .thumbnails {
@@ -277,6 +285,11 @@ p.small-tag {
   // box
   border-style: none;
   border-spacing: 25.5px 0px; //25.5
+
+  @media screen and (max-width: 414px) {
+    width: 60%;
+    //border-spacing: 7.5px 0px;
+  }
 }
 
 .td-width {
@@ -302,7 +315,7 @@ p.small-tag {
 
   @media screen and(max-width: 960px){
     margin-bottom: -800px;
-    margin-left: -400px;
+    margin-left: -300px;
     transform: rotate(13deg);
   }
 
@@ -332,6 +345,11 @@ p.small-tag {
 
 .box-back {
   z-index: 2;
+
+  @media screen and(max-width: 960px) {
+    margin-top: -10%;
+    margin-left: -10%;
+  }
 }
 
 .SITCON-text-path {
@@ -348,6 +366,16 @@ p.small-tag {
   padding-top: 65px; 
   margin-left: -350px; 
   z-index: 2;
+
+  @media screen and(max-width: 960px){
+    margin-left: -150px; 
+    margin-bottom: -545px; 
+  }
+
+  @media screen and(max-width: 414px){
+    padding-top: -565px; 
+  }
+  
 }
 
 .des-blue-bar {
