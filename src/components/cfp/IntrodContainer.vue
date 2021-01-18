@@ -2,10 +2,11 @@
     <main class="introduction-container">
 
         <div class="introduction">
-            <!-- <div class="home_background">
-                hello
-            </div> -->
+
+            <img src="@/assets/images/cfp/Ellipse 5.svg" class="ellipse"/>
+            <img src="@/assets/images/cfp/Group 10.svg" class="sitcon-icon"/>
             <img src="@/assets/images/cfp/Background.svg" class="background"/>
+            
             <!-- first part -->
             <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
             <svg width="890" height="900" class="first-box">
@@ -69,6 +70,9 @@
             </svg>
             <svg width="2000" height="350" class="des-blue-bar">
               <rect width="2000" height="350" style="fill:#226BB4;" />
+            </svg>
+            <svg width="1500" height="900" class="hiden-box">
+              <rect width="1500" height="900" style="fill:#ffffff;" />
             </svg>
             <div class="box-back" style="margin-top: 1000px;">
                 <div class="topic-intro">
