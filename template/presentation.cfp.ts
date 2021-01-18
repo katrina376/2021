@@ -44,7 +44,8 @@ export default [
     {
         title: ' Club Mate 與德國駭客精神：34C3 大會實錄',
         ytLink: 'https://www.youtube.com/watch?v=8xrYLc4num8',
-        introdLink: 'https://sitcon.org/2018/#/agenda/sub/35598abf-4efe-48fc-93a4-3d539e6f6c47'
+        introdLink: 'https://sitcon.org/2018/#/agenda/sub/35598abf-4efe-48fc-93a4-3d539e6f6c47',
+        img: 'https://img.youtube.com/vi/8xrYLc4num8/default.jpg'
     }, {
         title: '由淺入坑區塊鏈～從認識架構到應用智能合約！',
         ytLink: 'https://www.youtube.com/watch?v=B3fXXElzc9Q',
