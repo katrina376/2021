@@ -18,6 +18,7 @@ $fontFamily: Noto Sans CJK TC, monospace;
     font-size: 14pt;
   }
   @include xs {
+    font-size: 12pt;
   }
 }
 
@@ -36,6 +37,7 @@ $fontFamily: Noto Sans CJK TC, monospace;
   @include sm {
   }
   @include xs {
+    font-size: 1.6em;
   }
 }
 
