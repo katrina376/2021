@@ -1,8 +1,10 @@
-// goable
+// global
 @import './reset.scss';
 @import './variable.scss';
 @import './color.scss';
 @import './util.scss';
+
+// components
 @import './footer.scss';
 
 .sitcon-burnfont {
@@ -10,4 +12,9 @@
   font-weight: 900;
 }
 
-
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}

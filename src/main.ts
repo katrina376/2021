@@ -3,6 +3,14 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
+Vue.component('FontawesomeIcon', FontAwesomeIcon);
+
+
 Vue.config.productionTip = false;
 
 new Vue({
