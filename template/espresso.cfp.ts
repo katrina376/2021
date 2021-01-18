@@ -56,7 +56,7 @@ export default [
     {
         title: '格鬥遊戲 AI 開發經驗談',
         ytLink: 'https://www.youtube.com/watch?v=ryLLzSwQ54w',
-        introdLink: null,
+        introdLink: '',
         img: 'https://img.youtube.com/vi/ryLLzSwQ54w/default.jpg'
     }
 ];
