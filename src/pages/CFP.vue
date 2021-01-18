@@ -1,6 +1,5 @@
 <template>
   <div id="cfp">
-    <!--h1>cfp</h1-->
     <IntrodContainer></IntrodContainer>
   </div>
 </template>

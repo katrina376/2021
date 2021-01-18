@@ -78,6 +78,7 @@ $buttonHoverBg: #226BB4;
   .last-part {
     // size
     margin-top: 70px;
+    height: 325px;
     // font
     font-size: $contextFontSize;
     letter-spacing: $contextLetterSpace;
@@ -101,6 +102,9 @@ $buttonHoverBg: #226BB4;
     border-radius: 8px;
     // display
     display: inline-block;
+    
+    position: relative;
+    z-index: 5;
   }
 
   .button-post {
@@ -109,6 +113,8 @@ $buttonHoverBg: #226BB4;
     // size
     margin-left: 40px;
     margin-top: -20px;
+
+    z-index: 2;
   }
 
   .buttons:hover {
@@ -323,4 +329,5 @@ p.small-tag {
   margin-top: -240px; 
   margin-left: 270px; 
   margin-bottom: -710px;
+  z-index: 1;
 }
