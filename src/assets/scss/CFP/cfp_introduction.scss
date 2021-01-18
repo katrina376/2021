@@ -1,6 +1,7 @@
 // font
 $fontFamily: 'Noto Sans TC', sans-serif;
 $fontStyle: normal;
+$light-blue: #3D93E9;
 $fontColor: #226bb4;
 $buttonHoverColor: #ffffff;
 @mixin Font() {
@@ -20,7 +21,7 @@ $mh1FontSize: 26px;
 $mh2FontSize: 20px;
 $mh3FontSize: 14px;
 $mcontextFontSize: 14px;
-$hyperlinkFontSize: 20px;
+$hyperlinkFontSize: 14px;
 
 $enlargeFontSize: 55px;
 $subFontSize: 30px;
@@ -215,6 +216,7 @@ h3 {
   // font
   font-size: $hyperlinkFontSize;
   letter-spacing: $hyperlinkLetterSpace;
+  color: $light-blue;
   font-weight: normal;
   line-height: 42px;
 }

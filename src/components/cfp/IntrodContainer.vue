@@ -102,7 +102,7 @@
                     </p>
                     <p class="context">
                         企業合作歡迎聯繫
-                        <a class="content-hyperlink" href="mailto:contact@sitcon.org">contact@sitcon.org</a>
+                        <a class="context-hyperlink" href="mailto:contact@sitcon.org">contact@sitcon.org</a>
                     </p>
                     <div>
                         <button class="buttons"><h3>個人贊助方案</h3></button>
