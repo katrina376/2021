@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 // components
 import CFP from '../pages/CFP.vue';
-import Info from '../pages/Info.vue';
+import News from '../pages/News.vue';
 
 Vue.use(VueRouter);
 
@@ -26,9 +26,9 @@ export const routes: RouteConfig[] = [
     }
   },
   {
-    path: '/cfp/info',
-    name: 'CFP',
-    component: Info,
+    path: '/news',
+    name: 'news',
+    component: News,
     meta: {
       menuItem: false
     }
