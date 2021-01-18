@@ -10,10 +10,10 @@ $buttonHoverColor: #ffffff;
   text-decoration: underline;
 }
 // font size
-$h1FontSize: 48px;
-$h2FontSize: 36px;
-$h3FontSize: 24px;
-$contextFontSize: 20px;
+$h1FontSize: 30px;
+$h2FontSize: 24px;
+$h3FontSize: 16px;
+$contextFontSize: 13px;
 $buttonFontSize: 24px;
 
 $mh1FontSize: 26px;
@@ -43,7 +43,7 @@ $buttonHoverBg: #226BB4;
     @include Font;
     color: $fontColor;
     // size
-    margin-left: 10%;
+    margin-left: 15%;
   }
 
   .about-section {
@@ -86,7 +86,7 @@ $buttonHoverBg: #226BB4;
     line-height: 30px;
     // size
     margin-right: 37px;
-    padding: 12px 25px 12px 25px;
+    padding: 12px 15px 12px 15px;
     // box
     background-color: #ffffff;
     box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
@@ -133,7 +133,6 @@ h1 {
   line-height: 70px;
   font-weight: 900;
   letter-spacing: $titleLetterSpace;
-
   .enlarge {
     font-size: $enlargeFontSize;
   }
@@ -141,7 +140,6 @@ h1 {
   .sub {
     font-size: $subFontSize;
   }
-
 }
 
 h2 {
@@ -150,7 +148,7 @@ h2 {
   letter-spacing: $titleLetterSpace;
   font-weight: 900;
   line-height: 70px;
-  
+  margin: 0px;
 }
 
 h3 {
@@ -158,15 +156,17 @@ h3 {
   font-size: $h3FontSize;
   letter-spacing: $titleLetterSpace;
   font-weight: 900;
-  line-height: 30px;
+  line-height: 15px;
+  margin: 0px;
 }
 
 .context {
   // font
   font-size: $contextFontSize;
-  line-height: 42px;
+  line-height: 30px;
   letter-spacing: $contextLetterSpace;
   font-weight: normal;
+  margin-right: 50%;
 }
 
 .detail {
@@ -201,31 +201,37 @@ h3 {
 
 p.tag {
   // font
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 14px;
+  line-height: 15px;
   letter-spacing: 0;
   font-weight: 900;
   // align
   text-align: center;
-  .sub {
-    font-size: 20px;
-  }
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+p.tag.sub {
+    font-size: 12px;
+    line-height: 10px;
 }
 
 p.small-tag {
   margin-block-start: 0em;
   margin-block-end: 0.5em;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
+//NOTE: the size should be smaller, this temporary size is provided to support min font size of browser
 .cfp-img {
   // box
   border-radius: 4px;
   margin-bottom: 12px;
   // size
-  width: 225px;
-  height: 152px;
+  width: 175px;
+  height: 118px;
+  box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
 }
 
 .thumbnails {
@@ -239,10 +245,33 @@ p.small-tag {
   border-spacing: 25.5px 0px; //25.5
 }
 
+.td-width {
+  vertical-align: top;
+}
+
 .tag-table{
   // box
   border-style: none;
   border-spacing: 0px 0px; //25.5
   // size
   width: 500px;
+}
+
+.first-box {
+  box-shadow: 0 3px 12px 0 rgba(89, 120, 206, 0.56);
+  border-radius: 60px; 
+  transform: rotate(15deg); 
+  margin-bottom: -900px; 
+  margin-left: -200px;
+}
+
+.first-div {
+  z-index: 1;
+}
+
+.SITCON-text-path {
+  transform: scale(0.7);
+  padding-left: 300px;
+  margin-right: -550px;
+  margin-bottom: -600px; padding-top: 300px;
 }

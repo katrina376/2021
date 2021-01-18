@@ -2,53 +2,58 @@
     <main class="introduction-container">
         <div class="introduction">
             <!-- first part -->
-            <h1>關於 SITCON</h1>
-            <div class="about-section">
-                <p class="context">
-                    學生計算機年會（SITCON）自 2013
-                    年發起，以學生為本、由學生自發舉辦，長期投
-                    身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資
-                    訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。
-                </p>
-            </div>
-            <h2>歷屆年會網站</h2>
-            <div class="thumbnails">
-                <table class="img-table">
-                    <tr>
-                        <td class="td-width">
-                            <img class="cfp-img" src="@/assets/images/cfp/2020.png" />
-                            <p class="tag">SITCON 2020<br /></p>
-                            <p class="tag sub">#define</p>
-                        </td>
-                        <td class="td-width">
-                            <img class="cfp-img" src="@/assets/images/cfp/2019.png" />
-                            <p class="tag">SITCON 2019<br /></p>
-                            <p class="tag sub">開箱演算法</p>
-                        </td>
-                        <td class="td-width">
-                            <img class="cfp-img" src="@/assets/images/cfp/2018.png" />
-                            <p class="tag">SITCON 2018<br /></p>
-                            <p class="small-tag">POPULAR COMPUTER SCIENCE</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <h2>參與討論！</h2>
-            <div class="discuss-section">
-                <p class="context">
-                    SITCON 是個開放的社群，許多籌備的相關事項都會在公開的 Mailing list
-                    上進行<br />
-                    討論，如果有興趣參與，歡迎訂閱 SITCON 的 Mailing list
-                    並貢獻你的想法！
-                </p>
-                <p class="context" style="margin-top: 40px">
-                    若你想進一步了解過往討論的內容，也歡迎在 HackMD 上查看 SITCON 2021
-                    的會議記錄。
-                </p>
-            </div>
-            <div>
-                <button class="buttons">SITCON 論壇</button>
-                <button class="buttons">會議記錄</button>
+            <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
+            <svg width="890" height="900" class="first-box" style="margin-top: -300px">
+              <rect width="1000" height="1000" style="fill:#ffffff;" />
+            </svg>
+            <div class="first-div">
+                <h1>關於 SITCON</h1>
+                <div class="about-section">
+                    <p class="context">
+                        學生計算機年會（SITCON）自 2013
+                        年發起，以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。
+                    </p>
+                </div>
+
+                <h2>歷屆年會網站</h2>
+                <div class="thumbnails">
+                    <table class="img-table">
+                        <tr>
+                            <td class="td-width">
+                                <img class="cfp-img" src="@/assets/images/cfp/2020.png" />
+                                <p class="tag">SITCON 2020<br /></p>
+                                <p class="tag sub">#define</p>
+                            </td>
+                            <td class="td-width">
+                                <img class="cfp-img" src="@/assets/images/cfp/2019.png" />
+                                <p class="tag">SITCON 2019<br /></p>
+                                <p class="tag sub">開箱演算法</p>
+                            </td>
+                            <td class="td-width">
+                                <img class="cfp-img" src="@/assets/images/cfp/2018.png" />
+                                <p class="tag">SITCON 2018<br /></p>
+                                <p class="small-tag">POPULAR COMPUTER SCIENCE</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h2>參與討論！</h2>
+                <div class="discuss-section">
+                    <p class="context">
+                        SITCON 是個開放的社群，許多籌備的相關事項都會在公開的 Mailing list
+                        上進行<br />
+                        討論，如果有興趣參與，歡迎訂閱 SITCON 的 Mailing list
+                        並貢獻你的想法！
+                    </p>
+                    <p class="context" style="margin-top: 22px; margin-bottom: 22px">
+                        若你想進一步了解過往討論的內容，也歡迎在 HackMD 上查看 SITCON 2021
+                        的會議記錄。
+                    </p>
+                </div>
+                <div>
+                    <button class="buttons"><h3>SITCON 論壇</h3></button>
+                    <button class="buttons"><h3>會議記錄</h3></button>
+                </div>
             </div>
             <!-- first part -->
             <!-- second part -->
@@ -103,9 +108,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class IntrodContainer extends Vue {
-  @Prop() private msg!: string;
-}
+export default class IntrodContainer extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
