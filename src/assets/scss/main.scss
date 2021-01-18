@@ -1,14 +1,28 @@
-// goable
+// global
+@import './reset.scss';
 @import './variable.scss';
+@import './color.scss';
+@import './util.scss';
+
+// components
 @import './footer.scss';
 
-// CFP Page
-@import './CFP/CFP.scss';
-
+.sitcon-burnfont {
+  color: $mid-blue;
+  font-weight: 900;
+}
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    overflow-x: hidden;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
