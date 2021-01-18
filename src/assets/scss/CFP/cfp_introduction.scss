@@ -67,7 +67,8 @@ $buttonHoverBg: #226BB4;
     width:90%;
 
     @media screen and(max-width: 414px) {
-      width:150%;
+      font-size: $mcontextFontSize;
+      width:160%;
     }
   }
 
@@ -75,6 +76,11 @@ $buttonHoverBg: #226BB4;
     font-size: $contextFontSize;
     letter-spacing: $contextLetterSpace;
     line-height: 42px;
+
+    @media screen and(max-width: 414px) {
+      font-size: $mcontextFontSize;
+      width:80%;
+    }
   }
 
   .topic-intro {
@@ -84,6 +90,10 @@ $buttonHoverBg: #226BB4;
     font-size: $contextFontSize;
     letter-spacing: $contextLetterSpace;
     line-height: 42px;
+
+    @media screen and(max-width: 414px) {
+      margin-top: 60%;
+    }
   }
 
   .last-part {
@@ -243,11 +253,20 @@ p.tag {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 5px;
+
+  @media screen and (max-width: 414px) {
+    font-size: 16px;
+  }
 }
 
 p.tag.sub {
     font-size: 12px;
     line-height: 10px;
+
+    @media screen and (max-width: 414px) {
+      font-size: 12px;
+      margin-top: 8px;
+    }
 }
 
 p.small-tag {
@@ -255,6 +274,11 @@ p.small-tag {
   margin-block-end: 0.5em;
   font-size: 12px;
   text-align: center;
+
+  @media screen and (max-width: 414px) {
+    line-height:12px;
+    font-size: 10px;
+  }
 }
 
 //NOTE: the size should be smaller, this temporary size is provided to support min font size of browser
@@ -270,7 +294,7 @@ p.small-tag {
   @media screen and (max-width:414px){
     border-radius: 2px;
     margin-bottom: 12px;
-    width: 107px;
+    width: 111px;
     height: 75px;
     box-shadow: 0px 1px 6px rgba(89, 120, 206, 0.56);
   }
@@ -279,6 +303,10 @@ p.small-tag {
 .thumbnails {
   // box
   margin-left: -25.5px;
+
+  @media screen and (max-width:414px){
+    margin-left: -8px;
+  }
 }
 
 .img-table {
@@ -287,13 +315,18 @@ p.small-tag {
   border-spacing: 25.5px 0px; //25.5
 
   @media screen and (max-width: 414px) {
-    width: 60%;
-    //border-spacing: 7.5px 0px;
+    align-content: center;
+    border-spacing: 1.5px 0px;
   }
 }
 
 .td-width {
   vertical-align: top;
+
+  @media screen and (max-width: 414px){
+    text-align: center;
+    width: 123px;
+  }
 }
 
 .tag-table{
@@ -314,12 +347,15 @@ p.small-tag {
   z-index: 1;
 
   @media screen and(max-width: 960px){
+    border-radius: 40px; 
     margin-bottom: -800px;
-    margin-left: -300px;
     transform: rotate(13deg);
   }
 
   @media screen and(max-width: 414px){
+    border-radius: 27px; 
+    margin-bottom: -890px;
+    margin-left: -150px;
     transform:scale(0.6);
     transform: rotate(12deg);
   }
@@ -333,6 +369,14 @@ p.small-tag {
   margin-bottom: -1900px; 
   margin-left: -700px;
   z-index: 1;
+
+  @media screen and(max-width: 414px){
+    box-shadow: -10px 30px 30px 0 rgba(89, 120, 206, 0.56);
+    margin-top: 237px;
+    margin-left: -200px;
+    transform: rotate(12deg);
+    z-index: 2;
+  }
 }
 
 .hiden-box {
@@ -350,6 +394,25 @@ p.small-tag {
     margin-top: -10%;
     margin-left: -10%;
   }
+
+  @media screen and(max-width: 414px) {
+    margin-top: -10%;
+    margin-left: -10%;
+  }
+}
+
+.box-back2 {
+  z-index: 2;
+
+  @media screen and(max-width: 960px) {
+    margin-top: -10%;
+    margin-left: -10%;
+  }
+
+  @media screen and(max-width: 414px) {
+    margin-top: -10%;
+    margin-left: -10%;
+  }
 }
 
 .SITCON-text-path {
@@ -361,6 +424,7 @@ p.small-tag {
 }
 
 .des-text-path {
+  background: url(../../assets/images/cfp/Path_762.svg) no-repeat;
   transform: scale(0.7); 
   margin-bottom: -565px; 
   padding-top: 65px; 
@@ -373,6 +437,11 @@ p.small-tag {
   }
 
   @media screen and(max-width: 414px){
+    //background-image: url(../../assets/images/cfp/Mobile/Path_763.svg);
+    margin-top: 40px;
+    margin-left: -80px;
+    transform: scale(0.9); 
+    background: url(../../assets/images/cfp/Mobile/Path_763.svg) no-repeat;
     padding-top: -565px; 
   }
   
@@ -383,6 +452,11 @@ p.small-tag {
   margin-left: -400px; 
   margin-top: 360px; 
   margin-bottom: -1360px;
+
+  @media screen and(max-width: 414px){
+    margin-top: 60px;
+    transform: rotate(12deg) scale(1.5);
+  }
 }
 
 .paper-image {

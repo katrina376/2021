@@ -71,7 +71,7 @@
             
             <!-- first part -->
             <!-- second part -->
-            <img src="@/assets/images/cfp/Path 762.svg" class="des-text-path"/>
+            <img src="@/assets/images/cfp/Path_762.svg" class="des-text-path"/> <!---->
             <svg width="1500" height="1500" class="second-box">
               <rect width="1500" height="1500" style="fill:#ffffff;" />
             </svg>
@@ -81,7 +81,7 @@
             <svg width="1500" height="900" class="hiden-box">
               <rect width="1500" height="900" style="fill:#ffffff;" />
             </svg>
-            <div class="box-back" style="margin-top: 1000px;">
+            <div class="box-back2" style="margin-top: 1000px;">
                 <div class="topic-intro">
                     <h1>2021 年會主題</h1>
                     <h1>
