@@ -182,6 +182,7 @@ $buttonHoverBg: #226BB4;
     margin-right: 35px;
     // align
     vertical-align: bottom;
+    line-height: 30px;
 
     @media screen and(max-width:414px){
       font-size: 30px;
@@ -268,7 +269,7 @@ h3 {
   display: inline;
   // font
   font-size: $contextFontSize;
-  line-height: 42px;
+  line-height: 20px;
   letter-spacing: $contextLetterSpace;
   font-weight: normal;
   // align
