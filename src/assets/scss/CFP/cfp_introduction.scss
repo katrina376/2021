@@ -108,7 +108,7 @@ $buttonHoverBg: #226BB4;
     line-height: 42px;
 
     @media screen and(max-width: 414px) {
-      margin-top: 20%;
+      margin-top: 30%;
       width: 70%;
       margin-bottom: 30%;
     }
@@ -482,6 +482,10 @@ p.small-tag {
   margin-right: -550px;
   margin-bottom: -600px; 
   padding-top: 300px;
+  z-index: 2;
+  @media screen and(max-width: 414px) {
+    z-index: -2;
+  }
 }
 
 .des-text-path {
@@ -551,8 +555,11 @@ p.small-tag {
   z-index: -2;
 
   @media screen and(max-width: 414px){
-    //content: url(../../assets/images/cfp/Mobile/Mobile-background.svg) no-repeat;
-    background: url(../../assets/images/cfp/Mobile/Mobile-background.svg) no-repeat;
+    //content: url() no-repeat;//../../assets/images/cfp/Mobile/Mobile-background.svg
+    //visibility: hidden;
+    background: url(../../assets/images/cfp/Mobile/Mobile-background.svg) !important;
+    object-position: -99999px 99999px;
+    overflow: hidden;
     margin-left: -20%;
     margin-top: -20%;
     z-index: -1;

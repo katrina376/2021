@@ -11,9 +11,9 @@
             <img src="@/assets/images/cfp/Path 736.svg" class="sitcon-date"/>
             <img src="@/assets/images/cfp/Path 737.svg" class="sitcon-place"/>
             <img src="@/assets/images/cfp/Path 738.svg" class="sitcon-qeury"/>
-            
+            <!-- ../../assets/images/cfp/Mobile/Mobile-background.svg -->
             <img src="@/assets/images/cfp/Background.svg" class="background"/>
-
+            <!-- src="@/assets/images/cfp/Background.svg" -->
             <!-- first part -->
             <img src="@/assets/images/cfp/Path 740.svg" class="SITCON-text-path"/>
             <svg width="890" height="900" class="first-box">
