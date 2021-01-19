@@ -118,6 +118,7 @@ $buttonHoverBg: #226BB4;
     // font
     color: $fontColor;
     font-size: $buttonFontSize;
+    font-weight: 900;
     letter-spacing: $buttonLetterSpace;
     line-height: 30px;
     // size
@@ -137,6 +138,7 @@ $buttonHoverBg: #226BB4;
 
     @media screen and (max-width: 414px) {
       font-size: $mbuttonFontSize;
+      font-weight: 900;
       letter-spacing: 0px;
       color: $fontColor;
       text-align: center;
@@ -191,6 +193,7 @@ $buttonHoverBg: #226BB4;
 }
 
 h1, h2, h3, p, span {
+  font-family: $fontFamily;
   color: $fontColor;
 }
 
