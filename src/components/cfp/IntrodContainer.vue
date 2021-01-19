@@ -83,8 +83,8 @@
             </svg>
             <div class="box-back2" style="margin-top: 1000px;">
                 <div class="topic-intro">
-                    <h1>2021 年會主題</h1>
-                    <h1>
+                    <h1 class="right">2021 年會主題</h1>
+                    <h1 class="right">
                         <span class="enlarge">算盤的後裔</span>
                     </h1>
                     <p class="context">
